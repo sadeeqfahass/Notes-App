@@ -1,8 +1,6 @@
 import "./App.css";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Note from "./components/Note";
-// import notes from "./assets/Notes";
 import AddNote from "./components/AddNote";
 import { useState } from "react";
 
@@ -40,7 +38,6 @@ function App() {
       <Header />
       <AddNote onAdd={addNote} />
       <div className="notes-con">{notesEl}</div>
-      <Footer />
     </div>
   );
 }
